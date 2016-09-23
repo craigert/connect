@@ -1,0 +1,405 @@
+/* CSS Main */
+
+/* Reset
+--------------------------------------------------------- */
+* { border: 0 none; margin: 0; outline: medium none; padding: 0; }
+
+/* Fonts ------ */
+@font-face {
+    font-family: 'Source Sans Pro ExtraLight';
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    src: local('SourceSansPro-ExtraLight'), local('Source Sans Pro'), url(/common/fonts/source-sans-pro/EOT/SourceSansPro-ExtraLight.eot) format('embedded-opentype'), url(/common/fonts/source-sans-pro/WOFF/OTF/SourceSansPro-ExtraLight.otf.woff) format('woff'), url(/common/fonts/source-sans-pro/OTF/SourceSansPro-ExtraLight.otf) format('opentype'), url(/common/fonts/source-sans-pro/TTF/SourceSansPro-ExtraLight.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Source Sans Pro ExtraLightIt';
+    font-weight: 200;
+    font-style: italic;
+    font-stretch: normal;
+    src: local('SourceSansPro-ExtraLightIt'), local('Source Sans Pro'), url(/common/fonts/source-sans-pro/EOT/SourceSansPro-ExtraLightIt.eot) format('embedded-opentype'), url(/common/fonts/source-sans-pro/WOFF/OTF/SourceSansPro-ExtraLightIt.otf.woff) format('woff'), url(/common/fonts/source-sans-pro/OTF/SourceSansPro-ExtraLightIt.otf) format('opentype'), url(/common/fonts/source-sans-pro/TTF/SourceSansPro-ExtraLightIt.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Light';
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    src: local('SourceSansPro-Light'), local('Source Sans Pro'), url(/common/fonts/source-sans-pro/EOT/SourceSansPro-Light.eot) format('embedded-opentype'), url(/common/fonts/source-sans-pro/WOFF/OTF/SourceSansPro-Light.otf.woff) format('woff'), url(/common/fonts/source-sans-pro/OTF/SourceSansPro-Light.otf) format('opentype'), url(/common/fonts/source-sans-pro/TTF/SourceSansPro-Light.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Source Sans Pro LightIt';
+    font-weight: 300;
+    font-style: italic;
+    font-stretch: normal;
+    src: local('SourceSansPro-LightIt'), local('Source Sans Pro'), url(/common/fonts/source-sans-pro/EOT/SourceSansPro-LightIt.eot) format('embedded-opentype'), url(/common/fonts/source-sans-pro/WOFF/OTF/SourceSansPro-LightIt.otf.woff) format('woff'), url(/common/fonts/source-sans-pro/OTF/SourceSansPro-LightIt.otf) format('opentype'), url(/common/fonts/source-sans-pro/TTF/SourceSansPro-LightIt.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    src: local('SourceSansPro-Regular'), local('Source Sans Pro'), url(/common/fonts/source-sans-pro/EOT/SourceSansPro-Regular.eot) format('embedded-opentype'), url(/common/fonts/source-sans-pro/WOFF/OTF/SourceSansPro-Regular.otf.woff) format('woff'), url(/common/fonts/source-sans-pro/OTF/SourceSansPro-Regular.otf) format('opentype'), url(/common/fonts/source-sans-pro/TTF/SourceSansPro-Regular.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Italic';
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: normal;
+    src: local('SourceSansPro-Italic'), local('Source Sans Pro'), url(/common/fonts/source-sans-pro/EOT/SourceSansPro-Italic.eot) format('embedded-opentype'), url(/common/fonts/source-sans-pro/WOFF/OTF/SourceSansPro-It.otf.woff) format('woff'), url(/common/fonts/source-sans-pro/OTF/SourceSansPro-It.otf) format('opentype'), url(/common/fonts/source-sans-pro/TTF/SourceSansPro-It.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Semibold';
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    src: local('SourceSansPro-Semibold'), local('Source Sans Pro Semibold'), url(/common/fonts/source-sans-pro/EOT/SourceSansPro-Semibold.eot) format('embedded-opentype'), url(/common/fonts/source-sans-pro/WOFF/OTF/SourceSansPro-Semibold.otf.woff) format('woff'), url(/common/fonts/source-sans-pro/OTF/SourceSansPro-Semibold.otf) format('opentype'), url(/common/fonts/source-sans-pro/TTF/SourceSansPro-Semibold.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Source Sans Pro SemiboldIt';
+    font-weight: 600;
+    font-style: italic;
+    font-stretch: normal;
+    src: local('SourceSansPro-SemiboldIt'), local('Source Sans Pro'), url(/common/fonts/source-sans-pro/EOT/SourceSansPro-SemiboldIt.eot) format('embedded-opentype'), url(/common/fonts/source-sans-pro/WOFF/OTF/SourceSansPro-SemiboldIt.otf.woff) format('woff'), url(/common/fonts/source-sans-pro/OTF/SourceSansPro-SemiboldIt.otf) format('opentype'), url(/common/fonts/source-sans-pro/TTF/SourceSansPro-SemiboldIt.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Bold';
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    src: local('SourceSansPro-Bold'), local('Source Sans Pro Bold'), url(/common/fonts/source-sans-pro/EOT/SourceSansPro-Bold.eot) format('embedded-opentype'), url(/common/fonts/source-sans-pro/WOFF/OTF/SourceSansPro-Bold.otf.woff) format('woff'), url(/common/fonts/source-sans-pro/OTF/SourceSansPro-Bold.otf) format('opentype'), url(/common/fonts/source-sans-pro/TTF/SourceSansPro-Bold.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Source Sans Pro BoldIt';
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: normal;
+    src: local('SourceSansPro-BoldIt'), local('Source Sans Pro'), url(/common/fonts/source-sans-pro/EOT/SourceSansPro-BoldIt.eot) format('embedded-opentype'), url(/common/fonts/source-sans-pro/WOFF/OTF/SourceSansPro-BoldIt.otf.woff) format('woff'), url(/common/fonts/source-sans-pro/OTF/SourceSansPro-BoldIt.otf) format('opentype'), url(/common/fonts/source-sans-pro/TTF/SourceSansPro-BoldIt.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Black';
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    src: local('SourceSansPro-Black'), local('Source Sans Pro Black'), url(/common/fonts/source-sans-pro/EOT/SourceSansPro-Black.eot) format('embedded-opentype'), url(/common/fonts/source-sans-pro/WOFF/OTF/SourceSansPro-Black.otf.woff) format('woff'), url(/common/fonts/source-sans-pro/OTF/SourceSansPro-Black.otf) format('opentype'), url(/common/fonts/source-sans-pro/TTF/SourceSansPro-Black.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Source Sans Pro BlackIt';
+    font-weight: 900;
+    font-style: italic;
+    font-stretch: normal;
+    src: local('SourceSansPro-BlackIt'), local('Source Sans Pro'), url(/common/fonts/source-sans-pro/EOT/SourceSansPro-BlackIt.eot) format('embedded-opentype'), url(/common/fonts/source-sans-pro/WOFF/OTF/SourceSansPro-BlackIt.otf.woff) format('woff'), url(/common/fonts/source-sans-pro/OTF/SourceSansPro-BlackIt.otf) format('opentype'), url(/common/fonts/source-sans-pro/TTF/SourceSansPro-BlackIt.ttf) format('truetype')
+}
+
+/* Layout
+--------------------------------------------------------- */
+html { height: 100%; min-height: 100%; }
+
+body {
+    background: #AFB6BA;
+    color: #606060;
+    font-family: Source Sans Pro;
+    font-size: 12px;
+}
+
+#container {
+	background: #FFFFFF;
+	height: auto !important;
+  	margin: 0 auto;
+  	min-height: 100%;
+  	position: relative;
+  	width: 1000px;
+  	z-index: 2;
+	box-shadow: 0 0 15px #9BA1A5;
+}
+
+/* Elements
+--------------------------------------------------------- */
+/* Headings ------ */
+h1, h2, h3, h4, h5, h6 {
+	color: #16375e;
+}
+
+/* Links ------ */
+a:link, a:visited {}
+a:active, a:hover {}
+
+/* Useful classes
+--------------------------------------------------------- */
+/* Clearfix ------ */
+.clear:before, .clear:after {
+	content: "";
+	display: table;
+}
+.clear:after { clear: both }
+.clear { zoom: 1 }
+
+.hidden { display: none; }
+.right { float: right; }
+.left { float: left; }
+.shadow { box-shadow: 3px 3px 6px #CECECE; }
+#nomargin { margin-top: 0px; }
+
+/* Header
+--------------------------------------------------------- */
+#header { 
+	height: 150px;
+}
+
+#header .locations {
+	background: none repeat scroll 0 0 #B8BF0D;
+	display: inline-block;
+	float: right;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 15px 11px 15px 17px;
+	width: 130px;
+	min-height: 80px;
+}
+
+/* Main
+--------------------------------------------------------- */
+#main { }
+.columns #main { padding: 0px }
+
+
+/* Content
+--------------------------------------------------------- */
+.columns #content {
+	position: relative;
+    top: 0px;
+}
+
+#content .intro {
+  	position: relative;
+  	width: 266px;
+	height: 608px;
+	float: left;
+	background: #FFFFFF;
+	display: inline-block;
+	padding: 17px 15px 21px 26px;
+	border-right: 1px solid #cccccc;
+}
+
+#content .intro h3 {
+	font-family: 'Source Sans Pro Semibold', sans-serif;
+	font-size: 29px;
+ 	margin-bottom: 14px;
+	color: #1d4c80;
+	font-weight: normal;
+}
+#content .intro p {
+	font-family: 'Source Sans Pro Semibold', sans-serif;
+	font-size: 15px;
+  	font-weight: normal;
+	color: #606060;
+	line-height: 27px;
+}
+
+#content .mapContent {
+  	width: calc(100% - 266px - 15px - 26px - 1px);
+	float: left;
+	padding-bottom: 20px;
+}
+
+#content .mapNavigation {
+	padding: 17px 0px 20px 24px;
+	height: 68px;
+}
+
+#content .mapNavigation .navItem {
+	float: left;
+	width: 201px;
+	height: 68px;
+	margin-right: 14px;
+}
+#content .mapNavigation .navItem:hover {
+	cursor: pointer;
+}
+
+#content .mapNavigation .selected {
+	border: 2px solid #4492cd;
+}
+
+#content .mapNavigation .northAmerica {
+	background: url("../images/NA-Button.jpg") no-repeat scroll left top transparent;
+	border: 2px solid #ffffff;
+}
+#content .mapNavigation .northAmerica:hover {
+	background: url("../images/NA-button-active.jpg") no-repeat scroll left top transparent;
+	border: 2px solid #4492cd;
+}
+#content .mapNavigation .northAmerica.selected {
+	background: url("../images/NA-button-active.jpg") no-repeat scroll left top transparent;
+	border: 2px solid #4492cd;
+}
+#content .mapNavigation .centralAmerica {
+	background: url("../images/CA-Button.jpg") no-repeat scroll left top transparent;
+	border: 2px solid #ffffff;
+}
+#content .mapNavigation .centralAmerica:hover {
+	background: url("../images/CA-button-active.jpg") no-repeat scroll left top transparent;
+	border: 2px solid #4492cd;
+}
+#content .mapNavigation .centralAmerica.selected {
+	background: url("../images/CA-button-active.jpg") no-repeat scroll left top transparent;
+	border: 2px solid #4492cd;
+}
+#content .mapNavigation .southAmerica {
+	background: url("../images/SA-Button.jpg") no-repeat scroll left top transparent;
+	border: 2px solid #ffffff;
+}
+#content .mapNavigation .southAmerica:hover {
+	background: url("../images/SA-button-active.jpg") no-repeat scroll left top transparent;
+	border: 2px solid #4492cd;
+}
+#content .mapNavigation .southAmerica.selected {
+	background: url("../images/SA-button-active.jpg") no-repeat scroll left top transparent;
+	border: 2px solid #4492cd;
+}
+
+#content .mapNorthAmerica {
+	background: url("../images/NA-map-668px.jpg") no-repeat scroll 15px top transparent;
+	border-top: 1px solid #cccccc;
+	position: relative;
+}
+#content .mapNorthAmerica div.mapHeight {
+	height: 470px;
+}
+#content .mapCentralAmerica {
+	background: url("../images/CA-map-668px.jpg") no-repeat scroll left top transparent;
+	border-top: 1px solid #cccccc;
+	position: relative;
+	display: none;
+}
+#content .mapCentralAmerica div.mapHeight {
+	height: 470px;
+}
+#content .mapSouthAmerica {
+	background: url("../images/SA-map-668px.jpg") no-repeat scroll left top transparent;
+	border-top: 1px solid #cccccc;
+	height: 621px;
+	position: relative;
+	display: none;
+}
+#content .mapSouthAmerica div.mapHeight {
+	height: 611px;
+}
+
+#content .map-point {
+    background: url("../images/Pin-small-22px.png") no-repeat scroll left top transparent;
+    display: inline-block;
+    height: 22px;
+    position: absolute;
+    width: 14px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+#content .map-point a {	
+	color: #FFFFFF;
+    display: none;
+    height: 27px;
+    left: 0px;
+    padding: 7px 10px 0px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: -24px;
+    width: auto;
+    z-index: 999;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    background: #3679a6;
+    font-size: 15px;
+    white-space: nowrap;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+#content .map-point:hover a {
+    display: inline-block !important;
+}
+
+#content .location-region {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	color: #606060;
+	margin-top: 10px;
+	margin-bottom: 6px;
+}
+
+#content .location-nav {
+	background: #FFFFFF;
+    padding-left: 126px;
+}
+
+#content .location-nav h2 {
+	color: #163F6B;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	padding: 6px 0 0;
+}
+
+#content .location-nav ul {
+	float: left;
+	width: 145px;
+}
+
+#content .location-nav li {
+	/*background: url(../images/nav_arrow.png) no-repeat scroll 0 4px transparent;*/
+	list-style: none outside none;
+	padding-bottom: 3px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+#content .location-nav li a {
+	color: #606060;
+	text-decoration: none;
+	font-size: 13px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+#content .location-nav li a:hover {
+	color: #1E94D2;
+	text-decoration: none;
+}
+#content .location-nav .new {
+	font-size: 13px;
+	color: #e88f43;
+	font-style: italic;
+	font-weight: bold;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+/* Footer
+--------------------------------------------------------- */
+#footer { }
+
+#footerwrapper { 
+  margin: 0 auto;
+}
+
+#footer-info {
+	background: none repeat scroll 0 0 #1d4c80;
+	height: 12px;
+	margin: 0 auto;
+	padding: 10px 15px;
+}
+
+#footer-info p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 11px;
+	color: #e0e0e0;
+	line-height: 12px;
+}
+
+#footer-info .landesk {
+	float: right;
+}
